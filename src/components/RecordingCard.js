@@ -1,12 +1,13 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import PlayIcon from '../svgs/PlayIcon';
 import TextIcon from '../svgs/TextIcon';
 import SendIcon from '../svgs/SendIcon';
 import OptionIcon from '../svgs/OptionIcon';
 import styles from '../styles/globalStyles';
+import TranscriptIcon from '../svgs/TranscriptIcon';
 
-const RecordingCard = ({ item }) => {
+const RecordingCard = ({item}) => {
   return (
     <View style={styles.recordingCard}>
       <Text style={styles.recordingTime}>{item.time}</Text>
@@ -17,6 +18,11 @@ const RecordingCard = ({ item }) => {
           <Text style={styles.durationText}>{item.duration}</Text>
         </View>
         <View style={styles.iconRow}>
+          {item?.id === '2' && (
+            <TouchableOpacity style={styles.TextIconContainer}>
+              <TranscriptIcon />
+            </TouchableOpacity>
+          )}
           <TouchableOpacity style={styles.TextIconContainer}>
             <TextIcon />
           </TouchableOpacity>

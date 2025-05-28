@@ -1,4 +1,4 @@
-import { StyleSheet, Platform } from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 
 const styles = StyleSheet.create({
   // HomeScreen Styles
@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'flex-end',
     padding: 10,
-    marginTop:25
+    marginTop: 25,
   },
   HeaderOuterSection: {
     flexDirection: 'row',
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     ...Platform.select({
       ios: {
         shadowColor: '#000',
-        shadowOffset: { width: 0, height: 1 },
+        shadowOffset: {width: 0, height: 1},
         shadowOpacity: 0.2,
         shadowRadius: 2,
       },
@@ -150,8 +150,10 @@ const styles = StyleSheet.create({
   },
   iconRow: {
     flexDirection: 'row',
-    width: '40%',
-    justifyContent: 'space-around',
+    width: '45%',
+    justifyContent: 'flex-end',
+    alignItems:'center',
+    paddingRight:5,
   },
   TextIconContainer: {
     width: 30,
@@ -160,6 +162,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 100,
+    marginRight:8
   },
 
   // BottomPlayer Styles
@@ -175,7 +178,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-around',
     shadowColor: '#000',
-    shadowOffset: { width: 0, height: 4 },
+    shadowOffset: {width: 0, height: 4},
     shadowOpacity: 0.3,
     shadowRadius: 6,
     elevation: 3,
@@ -184,6 +187,7 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     marginBottom: 10,
+    justifyContent: 'center',
   },
   progressBackground: {
     backgroundColor: '#E6ECEF',
@@ -215,7 +219,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 25,
     alignItems: 'center',
-    width: '100%',
+    width: '96%',
     height: 60,
     justifyContent: 'center',
   },
